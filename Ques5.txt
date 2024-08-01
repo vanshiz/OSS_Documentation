@@ -1,0 +1,33 @@
+Project Structure
+main.c: Contains the main function, which serves as the entry point of the program. It handles command-line arguments, converts them to integers, and calls the appropriate functions to perform arithmetic operations.
+functions.c: Contains the implementation of the basic arithmetic functions.
+functions.h: Header file that declares the functions implemented in functions.c.
+
+
+How It Works
+main.c
+Purpose: Provides the entry point of the calculator program.
+Functions:
+
+main:
+Prints the number of command-line arguments and the first argument (program name).
+Checks if at least two additional arguments are provided.
+Converts the first two arguments to integers.
+Calls the functions add, subs, prod, and divid to perform the arithmetic operations.
+Prints the results of these operations.
+
+functions.c
+Purpose: Implements the basic arithmetic operations used by the calculator.
+Functions:
+int add(int a, int b): Returns the sum of a and b.
+int subs(int a, int b): Returns the difference when b is subtracted from a.
+int prod(int a, int b): Returns the product of a and b.
+int divid(int a, int b): Returns the quotient when a is divided by b. Note: This function does not handle division by zero.
+
+functions.h
+Purpose: Declares the arithmetic functions implemented in functions.c.
+Functions:
+int add(int a, int b);: Declaration for the addition function.
+int subs(int a, int b);: Declaration for the subtraction function.
+int prod(int a, int b);: Declaration for the multiplication function.
+int divid(int a, int b);: Declaration for the division function.
